@@ -8,7 +8,7 @@ use App\Filters\ApiFilter;
 
 class ProductFilter extends ApiFilter {
     protected $safeParams = [
-        'id' => ['eq'],
+        'id' => ['eq', 'gt', 'lt'],
         'title' => ['eq'],
         'description' => ['eq'],
         'price' => ['eq'],
